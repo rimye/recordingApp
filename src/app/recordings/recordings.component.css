@@ -1,0 +1,31 @@
+.list-group {
+  margin: 10;
+}
+
+.recording-item {
+  margin-bottom: 20;
+  background-color: #f0f0f0;
+  border-radius: 10;
+  padding: 15;
+}
+
+.recording-name {
+  font-size: 16;
+  margin-bottom: 10;
+}
+
+.play-button, .delete-button {
+  font-size: 14;
+  padding: 10;
+  margin-right: 10;
+  width: 80;
+  color: white;
+}
+
+.play-button {
+  background-color: #4CAF50;
+}
+
+.delete-button {
+  background-color: #f44336;
+}

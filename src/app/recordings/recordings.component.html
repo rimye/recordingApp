@@ -1,0 +1,13 @@
+<ActionBar title="녹음 목록">
+  <NavigationButton text="Back" (tap)="onBackTap()"></NavigationButton>
+</ActionBar>
+
+<ListView [items]="recordings" class="list-group">
+  <ng-template let-recording="item">
+    <GridLayout rows="auto, auto" columns="*, auto" class="recording-item">
+      <Label [text]="recording" row="0" col="0" colSpan="2" class="recording-name"></Label>
+      <Button [text]="currentlyPlaying === recording ? '정지' : '재생'" row="1" col="0" class="play-button" (tap)="playRecording(recording)"></Button>
+      <Button text="삭제" row="1" col="1" class="delete-button" (tap)="deleteRecording(recording)"></Button>
+    </GridLayout>
+  </ng-template>
+</ListView>

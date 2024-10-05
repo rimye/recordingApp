@@ -1,0 +1,25 @@
+.menu-button {
+  background-color: #808080;
+  color: white;
+  font-size: 16;
+  font-weight: bold;
+  padding: 10;
+  margin-bottom: 20;
+  border-radius: 5;
+}
+
+.recording {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

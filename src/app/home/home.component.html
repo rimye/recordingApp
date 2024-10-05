@@ -1,0 +1,9 @@
+<GridLayout rows="auto, *, auto" columns="*" class="p-20">
+  <Button row="0" text="녹음 목록" class="menu-button" (tap)="navigateToRecordings()"></Button>
+  
+  <StackLayout row="1" verticalAlignment="center">
+    <Image src="https://w7.pngwing.com/pngs/2/318/png-transparent-microphone-microphone-microphone-illustrator-recording-studio.png" width="200" height="200" [class.recording]="isRecording" (tap)="toggleRecording()"></Image>
+  </StackLayout>
+  
+  <Label row="2" text="녹음하려면 마이크를 탭하세요" class="text-center p-10" textWrap="true"></Label>
+</GridLayout>
